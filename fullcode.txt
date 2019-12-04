@@ -1,0 +1,14 @@
+setwd("E:/Tugas_DM/Tugas_kelompok")
+library(datasets)
+install.packages("ggplot2") 
+library(ggplot2)
+dataset <- read.csv("iris.csv", sep = ";")
+head(iris)
+ggplot(iris, aes(Petal.Length, Petal.Width, color = Species)) + geom_point()
+set.seed(1234)
+irisCluster <- kmeans(iris[, 3:4], 3, nstart = 20)
+irisCluster
+table(irisCluster$cluster, iris$Species)
+irisCluster$cluster <- as.factor(irisCluster$cluster)
+ggplot(iris, aes(Petal.Length, Petal.Width, color = 
+                   irisCluster$cluster)) + geom_point()
