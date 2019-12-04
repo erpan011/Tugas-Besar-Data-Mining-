@@ -1,5 +1,5 @@
 # Tugas-Besar-Data-Mining-
-Processing Iris Data with Classification Method Using C5.0 Algorithm 
+Clustering Data Iris Dengan Algoritma Kmeans
 Erpan Johan(3311811011)
 Ryan Andreansyah (3311811040)
 Riki Krisnaldi (3311811022)
