@@ -1,0 +1,11 @@
+setwd("E:/Tugas_DM/Tugas_kelompok")
+dataset <- read.csv("Sample_Stocks.csv", sep = ";")
+sample <- Sample_Stocks[1:2]
+sample
+cl <- kmeans(sample, 3)
+cl$size
+cl$centers
+cl
+plot(sample, col = cl$cluster)
+points(cl$centers, col = 1:2, pch = 12, cex =4)
+ 
